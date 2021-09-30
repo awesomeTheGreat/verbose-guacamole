@@ -4,8 +4,8 @@ from ncellapp import ncell, register
 
 class MyException(Exception):
 
-    def __init__(self, msg) -> None:
-        super().__init__(msg)
+    def __init__(self, message) -> None:
+        super().__init__(message)
 
 
 # Create application
