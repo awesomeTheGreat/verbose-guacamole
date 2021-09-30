@@ -9,7 +9,7 @@ class MyException(Exception):
 
 
 # Create application
-app = FastAPI(title='NcellApp FastAPI')
+app = FastAPI(title='Awebisam NcellApp FastAPI')
 
 
 @app.websocket("/ws")
@@ -45,9 +45,9 @@ async def websocket_endpoint(websocket: WebSocket):
                     account.login()
 
                     async def send_sms(free=False):
-                        await websocket.send_text('Send the reciever phone')
+                        await websocket.send_text('Please Send the reciever phone')
                         number = int(await recieve_text())
-                        await websocket.send_text('Send your message')
+                        await websocket.send_text('Please Send your message')
                         msg = await recieve_text()
                         try:
                             if free:
