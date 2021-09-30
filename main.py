@@ -4,8 +4,8 @@ from ncellapp import ncell, register
 
 class MyException(Exception):
 
-    def __init__(self, msg) -> None:
-        super().__init__(msg)
+    def __init__(self, message) -> None:
+        super().__init__(message)
 
 
 # Create application
@@ -80,7 +80,7 @@ async def websocket_endpoint(websocket: WebSocket):
                             await websocket.send_text("Please send the 16 digit pin.")
                             pin = await recieve_text()
                             account.selfRecharge(pin)
-                            await websocket.send_text("Successful")
+                            await websocket.send_text("Successfully Done")
                             await after_login()
 
                     print('Before Login')
