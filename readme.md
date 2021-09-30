@@ -6,6 +6,10 @@ Ncellapp module by <a href="https://github.com/hemantapkh">@hemantapkh</a>
 
 ### NOTE: <b> Not following best practices and, needs refactoring. </b>
 
+### Built with:
+1. Python
+2. Ncellapp
+3. FastAPI
 
 ### Current Features:
 1. View Balance
@@ -18,5 +22,6 @@ Ncellapp module by <a href="https://github.com/hemantapkh">@hemantapkh</a>
 1. Clone the repo
 2. Install dependencies with "pip install -r requirements.txt"
 3. Run it with "uvicord main:app --reload"
+
 
 ### Looking forward to your contribution.
